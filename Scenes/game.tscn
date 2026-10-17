@@ -8650,13 +8650,13 @@ spawn_interval = 2.5
 position = Vector2(1157, -755)
 script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("10_nb51f"), ExtResource("11_nnt18"), ExtResource("12_ewbju")])
-spawn_interval = 2.5
+spawn_interval = 1.5
 
 [node name="VanSpawner" type="Node2D" parent="." unique_id=1549229868]
 position = Vector2(1157, -1347)
 script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx")])
-spawn_interval = 2.5
+spawn_interval = 1.25
 
 [node name="CarSpawner2" type="Node2D" parent="." unique_id=447006253]
 position = Vector2(-1043, -380)
@@ -8668,10 +8668,10 @@ spawn_interval = 2.5
 position = Vector2(-1043, -931)
 script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("16_85qyi"), ExtResource("17_iivbl"), ExtResource("18_7nbq1")])
-spawn_interval = 2.5
+spawn_interval = 1.5
 
 [node name="LorrySpawner" type="Node2D" parent="." unique_id=724016001]
 position = Vector2(-1043, -1900)
 script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("22_7t8sx"), ExtResource("23_mg4q0")])
-spawn_interval = 2.5
+spawn_interval = 1.25
