@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://clibc8nqxgg5y"]
+
+[ext_resource type="PackedScene" uid="uid://dgap24d35fj7b" path="res://Scenes/CeeDee.tscn" id="1_ebmjs"]
+
+[node name="Game" type="Node2D" unique_id=2066925861]
+
+[node name="CharacterBody2D" parent="." unique_id=342522202 instance=ExtResource("1_ebmjs")]
+scale = Vector2(0.25, 0.25)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=731706906]
