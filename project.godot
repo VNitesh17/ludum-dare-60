@@ -15,6 +15,10 @@ run/main_scene="uid://clibc8nqxgg5y"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[global_group]
+
+Vehicles=""
+
 [input]
 
 move_up={

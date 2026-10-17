@@ -28,7 +28,14 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_x5u3a"]
 radius = 167.02695
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_oj87y"]
+radius = 156.38734
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cp7g8"]
+radius = 48.09366
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=342522202]
+collision_layer = 2
 script = ExtResource("1_x5u3a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1145490209]
@@ -40,3 +47,21 @@ frame_progress = 0.4800013
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=565243333]
 position = Vector2(0, -19)
 shape = SubResource("CircleShape2D_x5u3a")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=421095535]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1501565883]
+position = Vector2(-2, -16)
+shape = SubResource("CircleShape2D_oj87y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1208240502]
+position = Vector2(-57, -147)
+shape = SubResource("CircleShape2D_cp7g8")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=73596644]
+position = Vector2(49, -146)
+shape = SubResource("CircleShape2D_cp7g8")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
