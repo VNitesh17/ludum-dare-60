@@ -3,16 +3,17 @@ extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-@export var step_size: float = 48.0
-@export var move_speed: float = 180.0
+@export var step_size: float = 64.0
+@export var move_speed: float = 300.0
 
 var target_position: Vector2
 var is_moving: bool = false
 
 func _ready() -> void:
 	target_position = position
+	add_to_group("player")
 
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	if not is_moving:
 		var direction := Vector2.ZERO
 
@@ -26,14 +27,22 @@ func _process(delta: float) -> void:
 		elif Input.is_action_just_pressed("move_right"):
 			direction = Vector2.RIGHT
 			animated_sprite.flip_h = false
+			
 
 		if direction != Vector2.ZERO:
-			target_position += direction * step_size
+			var next_position := target_position + direction * step_size
+			target_position = next_position
 			is_moving = true
+			
 
 	if is_moving:
-		position = position.move_toward(target_position, move_speed * delta)
+		global_position = global_position.move_toward(
+			target_position + get_parent().global_position,
+			move_speed * delta
+		)
 
-		if position.distance_to(target_position) < 1.0:
-			position = target_position
+		if global_position.distance_to(
+			target_position + get_parent().global_position
+		) < 1.0:
+			global_position = target_position + get_parent().global_position
 			is_moving = false
