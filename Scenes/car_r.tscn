@@ -1,31 +1,32 @@
-[gd_scene format=3 uid="uid://d25ur2tnxxco2"]
+[gd_scene format=3 uid="uid://c46g0ik6hc2uv"]
 
-[ext_resource type="Script" uid="uid://bcjl76yrhcuba" path="res://Scripts/car.gd" id="1_ojuwe"]
-[ext_resource type="Texture2D" uid="uid://bthgg8817qkd8" path="res://Assets/Sprites/car_net.png" id="2_ojuwe"]
+[ext_resource type="Script" uid="uid://djcs847kdj1ws" path="res://Scripts/car2.gd" id="1_s51a4"]
+[ext_resource type="Texture2D" uid="uid://ce80wp3h27oro" path="res://Assets/Sprites/car_rev.png" id="2_bx627"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_go66d"]
-size = Vector2(386, 125)
+size = Vector2(390, 125)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yi23e"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_ojuwe")
+"texture": ExtResource("2_bx627")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[node name="CarNet2" type="CharacterBody2D" unique_id=823381681]
+[node name="Car_R" type="CharacterBody2D" unique_id=823381681]
 scale = Vector2(0.5, 0.5)
 collision_layer = 2
 collision_mask = 2
-script = ExtResource("1_ojuwe")
+script = ExtResource("1_s51a4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1793013554]
-position = Vector2(-27, -22.5)
+position = Vector2(33, -22.5)
 shape = SubResource("RectangleShape2D_go66d")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2008541307]
 sprite_frames = SubResource("SpriteFrames_yi23e")
+frame_progress = 0.6731611

@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://b2bdjdnec7x68"]
+[gd_scene format=3 uid="uid://d25ur2tnxxco2"]
 
-[ext_resource type="Script" uid="uid://bcjl76yrhcuba" path="res://Scripts/car.gd" id="1_lerpt"]
-[ext_resource type="Texture2D" uid="uid://dwuv4bsbtqd7a" path="res://Assets/Sprites/car_4.png" id="2_lerpt"]
+[ext_resource type="Script" uid="uid://bcjl76yrhcuba" path="res://Scripts/car.gd" id="1_ojuwe"]
+[ext_resource type="Texture2D" uid="uid://bthgg8817qkd8" path="res://Assets/Sprites/car_net.png" id="2_ojuwe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_go66d"]
 size = Vector2(386, 125)
@@ -10,18 +10,18 @@ size = Vector2(386, 125)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_lerpt")
+"texture": ExtResource("2_ojuwe")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[node name="Car4" type="CharacterBody2D" unique_id=823381681]
+[node name="Car2_L" type="CharacterBody2D" unique_id=823381681]
 scale = Vector2(0.5, 0.5)
 collision_layer = 2
 collision_mask = 2
-script = ExtResource("1_lerpt")
+script = ExtResource("1_ojuwe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1793013554]
 position = Vector2(-27, -22.5)

@@ -1,27 +1,31 @@
-[gd_scene format=3 uid="uid://bsj63x6teflav"]
+[gd_scene format=3 uid="uid://ck433gc6sf52e"]
 
-[ext_resource type="Script" uid="uid://bcjl76yrhcuba" path="res://Scripts/car.gd" id="1_tsdcl"]
-[ext_resource type="Texture2D" uid="uid://6rl0x6ho6ms1" path="res://Assets/Sprites/car_5.png" id="2_tsdcl"]
+[ext_resource type="Script" uid="uid://bcjl76yrhcuba" path="res://Scripts/car.gd" id="1_go66d"]
+[ext_resource type="Texture2D" uid="uid://du1h5iuvu0ixh" path="res://Assets/Sprites/car_2.png" id="1_wqo35"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_go66d"]
 size = Vector2(386, 125)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1sfmx"]
+atlas = ExtResource("1_wqo35")
+region = Rect2(0, 0, 512, 512)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yi23e"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_tsdcl")
+"texture": SubResource("AtlasTexture_1sfmx")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[node name="Car5" type="CharacterBody2D" unique_id=823381681]
+[node name="Car_L" type="CharacterBody2D" unique_id=823381681]
 scale = Vector2(0.5, 0.5)
 collision_layer = 2
 collision_mask = 2
-script = ExtResource("1_tsdcl")
+script = ExtResource("1_go66d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1793013554]
 position = Vector2(-27, -22.5)
