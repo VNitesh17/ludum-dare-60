@@ -1,21 +1,39 @@
+
 extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-@export var speed: float = 300.0
+@export var step_size: float = 48.0
+@export var move_speed: float = 180.0
 
-func _physics_process(delta: float) -> void:
-	var direction = Vector2.ZERO
+var target_position: Vector2
+var is_moving: bool = false
 
-	direction.x = Input.get_axis("ui_left", "ui_right")
-	direction.y = Input.get_axis("ui_up", "ui_down")
+func _ready() -> void:
+	target_position = position
 
-	direction = direction.normalized()
-	
-	if direction.x > 0:
-		animated_sprite.flip_h = false
-	elif direction.x < 0:
-		animated_sprite.flip_h = true
+func _process(delta: float) -> void:
+	if not is_moving:
+		var direction := Vector2.ZERO
 
-	velocity = direction * speed
-	move_and_slide()
+		if Input.is_action_just_pressed("move_up"):
+			direction = Vector2.UP
+		elif Input.is_action_just_pressed("move_down"):
+			direction = Vector2.DOWN
+		elif Input.is_action_just_pressed("move_left"):
+			direction = Vector2.LEFT
+			animated_sprite.flip_h = true
+		elif Input.is_action_just_pressed("move_right"):
+			direction = Vector2.RIGHT
+			animated_sprite.flip_h = false
+
+		if direction != Vector2.ZERO:
+			target_position += direction * step_size
+			is_moving = true
+
+	if is_moving:
+		position = position.move_toward(target_position, move_speed * delta)
+
+		if position.distance_to(target_position) < 1.0:
+			position = target_position
+			is_moving = false
