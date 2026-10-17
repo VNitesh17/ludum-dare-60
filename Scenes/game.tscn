@@ -15,6 +15,9 @@
 [ext_resource type="PackedScene" uid="uid://b4d1ostp01voe" path="res://Scenes/car2_r.tscn" id="11_rku1e"]
 [ext_resource type="PackedScene" uid="uid://dah0fndkg2ajj" path="res://Scenes/carBig3_l.tscn" id="12_ewbju"]
 [ext_resource type="PackedScene" uid="uid://crs4ti1w30fcq" path="res://Scenes/car3_r.tscn" id="12_rfjv2"]
+[ext_resource type="PackedScene" uid="uid://bpyiad716ckxo" path="res://Scenes/van_l.tscn" id="13_iivbl"]
+[ext_resource type="PackedScene" uid="uid://lesk4hcswb8i" path="res://Scenes/van2_l.tscn" id="14_exi56"]
+[ext_resource type="PackedScene" uid="uid://cyxqueiiss3bi" path="res://Scenes/van3_l.tscn" id="15_7t8sx"]
 [ext_resource type="PackedScene" uid="uid://uarty2py5g8x" path="res://Scenes/carBig_r.tscn" id="16_85qyi"]
 [ext_resource type="PackedScene" uid="uid://huh4kgvxepm5" path="res://Scenes/carBig2_r.tscn" id="17_iivbl"]
 [ext_resource type="PackedScene" uid="uid://hr06fv7vtpwt" path="res://Scenes/carBig3_r.tscn" id="18_7nbq1"]
@@ -8639,13 +8642,17 @@ position_smoothing_enabled = true
 position = Vector2(1157, -200)
 script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("7_1l0tm"), ExtResource("8_h4fw4"), ExtResource("9_rku1e")])
-spawn_interval = 3.0
+spawn_interval = 2.5
 
 [node name="CarBigSpawner" type="Node2D" parent="." unique_id=213896131]
 position = Vector2(1157, -755)
 script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("10_nb51f"), ExtResource("11_nnt18"), ExtResource("12_ewbju")])
-spawn_interval = 2.5
+
+[node name="VanSpawner" type="Node2D" parent="." unique_id=1549229868]
+position = Vector2(1157, -1347)
+script = ExtResource("6_i6g32")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx")])
 
 [node name="CarSpawner2" type="Node2D" parent="." unique_id=447006253]
 position = Vector2(-1043, -380)
@@ -8657,4 +8664,3 @@ spawn_interval = 3.0
 position = Vector2(-1043, -931)
 script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("16_85qyi"), ExtResource("17_iivbl"), ExtResource("18_7nbq1")])
-spawn_interval = 2.5

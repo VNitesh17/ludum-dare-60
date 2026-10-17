@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cyxqueiiss3bi"]
+
+[ext_resource type="Script" uid="uid://bcjl76yrhcuba" path="res://Scripts/car.gd" id="1_tyjxi"]
+[ext_resource type="Texture2D" uid="uid://yql37ybxs6hj" path="res://Assets/Sprites/shoots.png" id="2_tyjxi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_go66d"]
+size = Vector2(292, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yi23e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tyjxi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Van3_L" type="CharacterBody2D" unique_id=823381681]
+scale = Vector2(0.75, 0.75)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_tyjxi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1793013554]
+position = Vector2(-26, 12)
+shape = SubResource("RectangleShape2D_go66d")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2008541307]
+sprite_frames = SubResource("SpriteFrames_yi23e")
