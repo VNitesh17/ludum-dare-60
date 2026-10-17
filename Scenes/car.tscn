@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://du1h5iuvu0ixh" path="res://Assets/Sprites/car_2.png" id="1_wqo35"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_go66d"]
-size = Vector2(456, 125)
+size = Vector2(386, 125)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1sfmx"]
 atlas = ExtResource("1_wqo35")
@@ -28,7 +28,7 @@ collision_mask = 2
 script = ExtResource("1_go66d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1793013554]
-position = Vector2(8, -22.5)
+position = Vector2(-27, -22.5)
 shape = SubResource("RectangleShape2D_go66d")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2008541307]
