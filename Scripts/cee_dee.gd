@@ -12,7 +12,6 @@ func _physics_process(delta: float) -> void:
 
 	direction = direction.normalized()
 	
-	#player flip
 	if direction.x > 0:
 		animated_sprite.flip_h = false
 	elif direction.x < 0:

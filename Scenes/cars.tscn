@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bkkc2nsb6a88t"]
+
+[sub_resource type="GDScript" id="GDScript_2t1pa"]
+script/source = "
+extends CharacterBody2D
+
+@export var speed: float = 250.0
+@export var direction: int = -1
+
+func _physics_process(_delta: float) -> void:
+	velocity.x = direction * speed
+	velocity.y = 0
+	move_and_slide()
+
+	var screen_width = get_viewport_rect().size.x
+
+	if global_position.x < -100 or global_position.x > screen_width + 100:
+		queue_free()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2t1pa"]
+
+[node name="Cars" type="CharacterBody2D" unique_id=1333101767]
+script = SubResource("GDScript_2t1pa")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=206493616]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=169061433]
+shape = SubResource("RectangleShape2D_2t1pa")
