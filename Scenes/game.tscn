@@ -9948,6 +9948,56 @@ script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
 spawn_interval = 1.35
 
+[node name="VanSpawnerSingle" type="Node2D" parent="." unique_id=896189318]
+position = Vector2(7211, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
+[node name="VanSpawnerSingle2" type="Node2D" parent="." unique_id=2085891251]
+position = Vector2(6744, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
+[node name="VanSpawnerSingle3" type="Node2D" parent="." unique_id=428747892]
+position = Vector2(6232, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
+[node name="VanSpawnerSingle4" type="Node2D" parent="." unique_id=2033639925]
+position = Vector2(5720, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
+[node name="VanSpawnerSingle5" type="Node2D" parent="." unique_id=428281214]
+position = Vector2(5200, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
+[node name="VanSpawnerSingle6" type="Node2D" parent="." unique_id=1435696625]
+position = Vector2(4711, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
+[node name="VanSpawnerSingle7" type="Node2D" parent="." unique_id=245890309]
+position = Vector2(4128, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
+[node name="VanSpawnerSingle8" type="Node2D" parent="." unique_id=1614278197]
+position = Vector2(3652, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
+[node name="VanSpawnerSingle9" type="Node2D" parent="." unique_id=1966600740]
+position = Vector2(3118, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
+[node name="VanSpawnerSingle10" type="Node2D" parent="." unique_id=748212790]
+position = Vector2(2642, -874)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
+
 [node name="CarSpawner2" type="Node2D" parent="." unique_id=447006253]
 position = Vector2(1417, 93)
 script = ExtResource("6_i6g32")
