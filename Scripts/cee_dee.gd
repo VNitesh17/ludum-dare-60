@@ -43,7 +43,7 @@ func _physics_process(delta: float) -> void:
 	velocity = direction * speed
 	
 	if friend_body!=null and Input.is_action_just_pressed("interact"):
-		#add count
+		game_manager.add_count()
 		game_manager.add_score(100)
 		Collect.play()
 		friend_body.queue_free()
