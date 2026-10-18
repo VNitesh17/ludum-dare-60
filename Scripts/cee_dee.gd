@@ -13,8 +13,8 @@ func _physics_process(delta: float) -> void:
 	
 	var direction = Vector2.ZERO
 
-	direction.x = Input.get_axis("ui_left", "ui_right")
-	direction.y = Input.get_axis("ui_up", "ui_down")
+	direction.x = Input.get_axis("move_left", "move_right")
+	direction.y = Input.get_axis("move_up", "move_down")
 
 	direction = direction.normalized()
 	
@@ -31,3 +31,5 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Vehicles"):
 		animated_sprite.play("dead")
 		isDead = true
+	if body.is_in_group("Friends") and Input.is_action_just_pressed("interact"):
+		print("Collecting")
