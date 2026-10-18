@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dxtg486pv5p6i"]
+
+[ext_resource type="AudioStream" uid="uid://wg0qqs4art5s" path="res://Assets/Sound/collect.wav" id="1_e2u6p"]
+
+[node name="Collect" type="AudioStreamPlayer" unique_id=1533911418]
+stream = ExtResource("1_e2u6p")
+bus = &"Music"
