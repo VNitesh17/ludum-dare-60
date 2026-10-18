@@ -9845,7 +9845,7 @@ spawn_interval = 1.5
 position = Vector2(7211, -874)
 script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
-spawn_interval = 1.5
+spawn_interval = 1.35
 
 [node name="CarSpawner2" type="Node2D" parent="." unique_id=447006253]
 position = Vector2(1417, 93)
@@ -9863,7 +9863,7 @@ spawn_interval = 1.5
 position = Vector2(1419, -1427)
 script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("22_7t8sx"), ExtResource("23_mg4q0")])
-spawn_interval = 1.5
+spawn_interval = 1.35
 
 [node name="Boundary" type="StaticBody2D" parent="." unique_id=590815896]
 position = Vector2(4189, 991)
@@ -9968,7 +9968,7 @@ position = Vector2(88, 2.5)
 shape = SubResource("RectangleShape2D_xe308")
 
 [node name="CrossedPoint4" type="Area2D" parent="." unique_id=1915214322]
-position = Vector2(4176, -1600)
+position = Vector2(4176, -1570)
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("36_i26dy")
