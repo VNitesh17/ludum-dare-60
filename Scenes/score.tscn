@@ -11,11 +11,11 @@ grow_vertical = 2
 [node name="Label" type="Label" parent="." unique_id=254106371]
 layout_mode = 0
 offset_left = 58.0
-offset_top = 41.0
+offset_top = 82.0
 offset_right = 179.0
-offset_bottom = 86.0
+offset_bottom = 127.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
+theme_override_constants/outline_size = 8
 theme_override_constants/shadow_outline_size = 1
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 24
 text = "Score: 0"
