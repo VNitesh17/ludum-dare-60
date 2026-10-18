@@ -9904,6 +9904,61 @@ script = ExtResource("6_i6g32")
 object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
 spawn_interval = 2.5
 
+[node name="CarSpawnerSingleRight" type="Node2D" parent="." unique_id=1981105265]
+position = Vector2(1421, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight10" type="Node2D" parent="." unique_id=101394117]
+position = Vector2(2218, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight11" type="Node2D" parent="." unique_id=1506306525]
+position = Vector2(1771, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight2" type="Node2D" parent="." unique_id=2049794638]
+position = Vector2(2618, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight3" type="Node2D" parent="." unique_id=459645487]
+position = Vector2(3121, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight4" type="Node2D" parent="." unique_id=419392672]
+position = Vector2(3633, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight5" type="Node2D" parent="." unique_id=903687845]
+position = Vector2(4122, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight6" type="Node2D" parent="." unique_id=92200472]
+position = Vector2(4682, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight7" type="Node2D" parent="." unique_id=2021225475]
+position = Vector2(5198, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight8" type="Node2D" parent="." unique_id=39427044]
+position = Vector2(5727, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
+[node name="CarSpawnerSingleRight9" type="Node2D" parent="." unique_id=1418338044]
+position = Vector2(6230, 93)
+script = ExtResource("11_lmoi6")
+object_scenes = Array[PackedScene]([ExtResource("8_v158k"), ExtResource("11_rku1e"), ExtResource("12_rfjv2")])
+
 [node name="CarBigSpawner2" type="Node2D" parent="." unique_id=1597166722]
 position = Vector2(1412, -458)
 script = ExtResource("6_i6g32")
