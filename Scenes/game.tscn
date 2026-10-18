@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b2ggdkuv6d51e" path="res://Assets/Sprites/Grass.png" id="2_3dryh"]
 [ext_resource type="PackedScene" uid="uid://kguf7hhvki6" path="res://Scenes/game_over.tscn" id="2_6a4tp"]
 [ext_resource type="Texture2D" uid="uid://l2dd5ph6bhbi" path="res://icon.svg" id="2_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://myliuhbmrd5a" path="res://Scenes/you_won.tscn" id="3_631el"]
 [ext_resource type="Texture2D" uid="uid://c1gfqeqtnok56" path="res://Assets/Sprites/Grass_2.png" id="3_wowpa"]
 [ext_resource type="Texture2D" uid="uid://b5i5v32qplxiy" path="res://Assets/Sprites/white-color-solid-background-1920x1080.png" id="4_i6g32"]
 [ext_resource type="Texture2D" uid="uid://bs17tq8fkuw5u" path="res://Assets/Sprites/images.png" id="5_fkdbe"]
@@ -9820,6 +9821,8 @@ unique_name_in_owner = true
 script = ExtResource("1_bwj6o")
 
 [node name="GameOver" parent="GameManager" unique_id=1372468273 instance=ExtResource("2_6a4tp")]
+
+[node name="YouWon" parent="GameManager" unique_id=1816829392 instance=ExtResource("3_631el")]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1690796663]
 z_index = -1
