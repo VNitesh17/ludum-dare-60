@@ -6,10 +6,12 @@ extends CharacterBody2D
 @onready var crossed_point_3: Area2D = $"../CrossedPoint3"
 @onready var crossed_point_4: Area2D = $"../CrossedPoint4"
 @onready var game_manager: Node = %GameManager
+@onready var main_menu: CanvasLayer = $"../GameManager/MainMenu/CanvasLayer"
 
 @export var speed: float = 300.0
 
 var isDead = false
+var canMove = false
 
 var friend_body = null
 
@@ -22,10 +24,11 @@ func _ready() -> void:
 	crossed_point_2.crossed.connect(_sprite_update)
 	crossed_point_3.crossed.connect(_sprite_update)
 	crossed_point_4.crossed.connect(_sprite_normal)
+	main_menu.start.connect(start_game)
 
 func _physics_process(delta: float) -> void:
 	
-	if isDead:
+	if isDead or !canMove:
 		return
 	
 	var direction = Vector2.ZERO
@@ -61,6 +64,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		BackgroundMusic4.stop()
 		Break.play()
 		isDead = true
+		await Break.finished
 		game_manager.player_dead()
 	if body.is_in_group("Friends"):
 		friend_body = body
@@ -87,3 +91,6 @@ func _sprite_normal():
 	total += 100
 	game_manager.add_score(total)
 	animated_sprite.sprite_frames.set_animation_speed("default", 1.0)
+
+func start_game():
+	canMove = true

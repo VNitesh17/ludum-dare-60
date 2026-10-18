@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://myliuhbmrd5a" path="res://Scenes/you_won.tscn" id="3_631el"]
 [ext_resource type="Texture2D" uid="uid://c1gfqeqtnok56" path="res://Assets/Sprites/Grass_2.png" id="3_wowpa"]
 [ext_resource type="Texture2D" uid="uid://b5i5v32qplxiy" path="res://Assets/Sprites/white-color-solid-background-1920x1080.png" id="4_i6g32"]
+[ext_resource type="PackedScene" uid="uid://yaa1vlwjpfs2" path="res://Scenes/main_menu.tscn" id="4_vs120"]
 [ext_resource type="Texture2D" uid="uid://bs17tq8fkuw5u" path="res://Assets/Sprites/images.png" id="5_fkdbe"]
 [ext_resource type="Script" uid="uid://cfn8tt42fqgvp" path="res://Scripts/car_spawner.gd" id="6_i6g32"]
 [ext_resource type="PackedScene" uid="uid://ck433gc6sf52e" path="res://Scenes/car_l.tscn" id="7_1l0tm"]
@@ -9823,6 +9824,8 @@ script = ExtResource("1_bwj6o")
 [node name="GameOver" parent="GameManager" unique_id=1372468273 instance=ExtResource("2_6a4tp")]
 
 [node name="YouWon" parent="GameManager" unique_id=1816829392 instance=ExtResource("3_631el")]
+
+[node name="MainMenu" parent="GameManager" unique_id=707606523 instance=ExtResource("4_vs120")]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1690796663]
 z_index = -1

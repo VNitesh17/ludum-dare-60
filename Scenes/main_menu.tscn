@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://yaa1vlwjpfs2"]
+
+[ext_resource type="Script" uid="uid://cghy458708fj7" path="res://Scripts/main_menu.gd" id="1_28flt"]
+
+[node name="MainMenu" type="Node2D" unique_id=1372468273]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=126754094]
+script = ExtResource("1_28flt")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1817266559]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.679998, 16.039999)
+color = Color(0, 0, 0, 0.39215687)
+
+[node name="Message" type="Label" parent="CanvasLayer" unique_id=1541997011]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -272.0
+offset_top = 82.0
+offset_right = 273.0
+offset_bottom = 175.0
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Help CeeDee reach safe haven.
+And save old friends along the way."
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="CanvasLayer" unique_id=1526774101]
+offset_left = 473.0
+offset_top = 464.0
+offset_right = 644.0
+offset_bottom = 517.0
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Play Game"
+
+[node name="Controls" type="Label" parent="CanvasLayer" unique_id=2131473155]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -416.0
+offset_top = -172.0
+offset_right = -27.0
+offset_bottom = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+text = "Move: WASD/Arrow Keys 
+Save Friends: E
+"
+
+[connection signal="pressed" from="CanvasLayer/PlayButton" to="CanvasLayer" method="_on_play_button_pressed"]
