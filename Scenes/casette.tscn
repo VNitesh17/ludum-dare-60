@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://b1im2vci4rvng"]
+
+[ext_resource type="Texture2D" uid="uid://b0idwu7jv3y1m" path="res://Assets/Sprites/casette.png" id="1_s3b4m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gq11i"]
+atlas = ExtResource("1_s3b4m")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxrlf"]
+atlas = ExtResource("1_s3b4m")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_672nc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gq11i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxrlf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.5
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sup7g"]
+size = Vector2(230, 112)
+
+[node name="Casette" type="CharacterBody2D" unique_id=920716668]
+scale = Vector2(0.4, 0.4)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=729106513]
+sprite_frames = SubResource("SpriteFrames_672nc")
+autoplay = "default"
+frame = 1
+frame_progress = 0.51039785
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1671482182]
+position = Vector2(5, -26)
+shape = SubResource("RectangleShape2D_sup7g")

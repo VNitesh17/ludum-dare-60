@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://ey6g8ylkefvu"]
+
+[ext_resource type="Texture2D" uid="uid://cya3jxj2g3pru" path="res://Assets/Sprites/book.png" id="1_rhhov"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khdek"]
+atlas = ExtResource("1_rhhov")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vt1r"]
+atlas = ExtResource("1_rhhov")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_672nc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khdek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vt1r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sup7g"]
+size = Vector2(170.00003, 275)
+
+[node name="Book" type="CharacterBody2D" unique_id=920716668]
+scale = Vector2(0.4, 0.4)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=729106513]
+sprite_frames = SubResource("SpriteFrames_672nc")
+autoplay = "default"
+frame_progress = 0.07712478
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1671482182]
+position = Vector2(-9.999988, -12.499957)
+scale = Vector2(0.9999995, 0.9999995)
+shape = SubResource("RectangleShape2D_sup7g")
