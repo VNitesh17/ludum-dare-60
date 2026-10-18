@@ -28,6 +28,7 @@ animations = [{
 size = Vector2(250.00015, 162.50012)
 
 [node name="Cartridge" type="CharacterBody2D" unique_id=920716668]
+z_index = -1
 scale = Vector2(0.25, 0.25)
 collision_layer = 2
 
