@@ -9816,7 +9816,7 @@ tile_set = SubResource("TileSet_wrm1d")
 collision_enabled = false
 
 [node name="Player" parent="." unique_id=342522202 instance=ExtResource("1_ebmjs")]
-position = Vector2(3575, -1663)
+position = Vector2(4190, 695)
 scale = Vector2(0.25, 0.25)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=731706906]
