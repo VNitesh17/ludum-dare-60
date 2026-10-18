@@ -1,12 +1,18 @@
 extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var crossed_point: Area2D = $"../CrossedPoint"
 
 @export var speed: float = 300.0
 
 var isDead = false
 
 var friend_body = null
+
+var animSpeed = 1.0
+
+func _ready() -> void:
+	crossed_point.crossed.connect(_sprite_update)
 
 func _physics_process(delta: float) -> void:
 	
@@ -47,6 +53,10 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		
 		
 
-
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	friend_body = null
+	
+func _sprite_update():
+	print("updating sprite")
+	animSpeed+=1.0
+	animated_sprite.sprite_frames.set_animation_speed("default", animSpeed)

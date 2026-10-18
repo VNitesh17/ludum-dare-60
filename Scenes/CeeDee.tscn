@@ -47,13 +47,14 @@ radius = 156.38734
 [sub_resource type="CircleShape2D" id="CircleShape2D_cp7g8"]
 radius = 48.09366
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=342522202]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=342522202 groups=["Player"]]
 collision_layer = 2
 script = ExtResource("1_x5u3a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1145490209]
 sprite_frames = SubResource("SpriteFrames_2sfem")
 autoplay = "default"
+frame_progress = 0.28683347
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=565243333]
 position = Vector2(0, -19)

@@ -15,15 +15,21 @@ run/main_scene="uid://clibc8nqxgg5y"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://i72kyet26vwt"
+
 [autoload]
 
 BackgroundMusic="*uid://vv7wrsnwmwty"
+BackgroundMusic1="*uid://c3u2e0f4meycc"
 
 [global_group]
 
 Vehicles=""
 Friends=""
 Safehaven=""
+Player=""
 
 [input]
 
