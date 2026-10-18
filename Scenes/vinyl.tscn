@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://1h51q56kdtk6"]
+
+[ext_resource type="Texture2D" uid="uid://c4gler7y7utlw" path="res://Assets/Sprites/vinyl.png" id="1_bveri"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tm1du"]
+atlas = ExtResource("1_bveri")
+region = Rect2(0, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tes6"]
+atlas = ExtResource("1_bveri")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_672nc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tm1du")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2tes6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bveri"]
+radius = 117.00427
+
+[node name="Vinyl" type="CharacterBody2D" unique_id=920716668]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=729106513]
+sprite_frames = SubResource("SpriteFrames_672nc")
+autoplay = "default"
+frame = 1
+frame_progress = 0.3661234
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1671482182]
+shape = SubResource("CircleShape2D_bveri")
