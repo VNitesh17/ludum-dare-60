@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bxri1d3js35w4"]
+
+[ext_resource type="Texture2D" uid="uid://beppg1jifbfeh" path="res://Assets/Sprites/vhs.png" id="1_1ddu1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cj655"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1ddu1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g6rr7"]
+size = Vector2(276.66666, 133.66666)
+
+[node name="VHS" type="StaticBody2D" unique_id=1908563019 groups=["Floppy"]]
+z_index = -1
+scale = Vector2(0.5, 0.5)
+collision_layer = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1571926420]
+sprite_frames = SubResource("SpriteFrames_cj655")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1477080057]
+position = Vector2(1.6666762, -60.166668)
+shape = SubResource("RectangleShape2D_g6rr7")
