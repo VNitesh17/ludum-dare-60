@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cpshxnk0h22yv"]
+
+[ext_resource type="Script" uid="uid://bcjl76yrhcuba" path="res://Scripts/car.gd" id="1_itytm"]
+[ext_resource type="Texture2D" uid="uid://c2c5foy20itdj" path="res://Assets/Sprites/jemminy.png" id="2_itytm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_go66d"]
+size = Vector2(292, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yi23e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_itytm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Van4_L" type="CharacterBody2D" unique_id=823381681 groups=["Vehicles"]]
+scale = Vector2(0.75, 0.75)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_itytm")
+speed = 400.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1793013554]
+position = Vector2(-26, 12)
+shape = SubResource("RectangleShape2D_go66d")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2008541307]
+sprite_frames = SubResource("SpriteFrames_yi23e")

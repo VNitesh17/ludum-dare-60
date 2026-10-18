@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bpyiad716ckxo"]
 
 [ext_resource type="Script" uid="uid://bcjl76yrhcuba" path="res://Scripts/car.gd" id="1_c4k80"]
-[ext_resource type="Texture2D" uid="uid://uwybnjscf33k" path="res://Assets/Sprites/ticktock.png" id="2_c4k80"]
+[ext_resource type="Texture2D" uid="uid://730mq6jau872" path="res://Assets/Sprites/clawd_van.png" id="2_c4k80"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_go66d"]
 size = Vector2(292, 160)

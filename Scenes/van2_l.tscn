@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://lesk4hcswb8i"]
 
 [ext_resource type="Script" uid="uid://bcjl76yrhcuba" path="res://Scripts/car.gd" id="1_2cdts"]
-[ext_resource type="Texture2D" uid="uid://11oxsvmknobe" path="res://Assets/Sprites/reals.png" id="2_2cdts"]
+[ext_resource type="Texture2D" uid="uid://c461wqtd77njx" path="res://Assets/Sprites/mehta.png" id="2_2cdts"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_go66d"]
 size = Vector2(292, 160)

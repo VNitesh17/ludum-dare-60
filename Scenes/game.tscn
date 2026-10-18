@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://bpyiad716ckxo" path="res://Scenes/van_l.tscn" id="13_iivbl"]
 [ext_resource type="PackedScene" uid="uid://lesk4hcswb8i" path="res://Scenes/van2_l.tscn" id="14_exi56"]
 [ext_resource type="PackedScene" uid="uid://cyxqueiiss3bi" path="res://Scenes/van3_l.tscn" id="15_7t8sx"]
+[ext_resource type="PackedScene" uid="uid://cpshxnk0h22yv" path="res://Scenes/van4_l.tscn" id="16_22asu"]
 [ext_resource type="PackedScene" uid="uid://uarty2py5g8x" path="res://Scenes/carBig_r.tscn" id="16_85qyi"]
 [ext_resource type="PackedScene" uid="uid://huh4kgvxepm5" path="res://Scenes/carBig2_r.tscn" id="17_iivbl"]
 [ext_resource type="PackedScene" uid="uid://hr06fv7vtpwt" path="res://Scenes/carBig3_r.tscn" id="18_7nbq1"]
@@ -8670,7 +8671,7 @@ spawn_interval = 1.5
 [node name="VanSpawner" type="Node2D" parent="." unique_id=1549229868]
 position = Vector2(3029, -874)
 script = ExtResource("6_i6g32")
-object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx")])
+object_scenes = Array[PackedScene]([ExtResource("13_iivbl"), ExtResource("14_exi56"), ExtResource("15_7t8sx"), ExtResource("16_22asu")])
 spawn_interval = 1.25
 
 [node name="CarSpawner2" type="Node2D" parent="." unique_id=447006253]
