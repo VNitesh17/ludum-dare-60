@@ -63,6 +63,8 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		isDead = true
 	if body.is_in_group("Friends"):
 		friend_body = body
+	if body.is_in_group("Floppy"):
+		game_manager.show_save()
 	if body.is_in_group("Safehaven"):
 		hide()
 		isDead = true
@@ -72,6 +74,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	friend_body = null
+	game_manager.hide_save()
 	
 func _sprite_update():
 	animSpeed+=1.0
