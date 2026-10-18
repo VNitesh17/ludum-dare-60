@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var crossed_point: Area2D = $"../CrossedPoint"
+@onready var crossed_point_2: Area2D = $"../CrossedPoint2"
+@onready var crossed_point_3: Area2D = $"../CrossedPoint3"
 
 @export var speed: float = 300.0
 
@@ -13,6 +15,8 @@ var animSpeed = 1.0
 
 func _ready() -> void:
 	crossed_point.crossed.connect(_sprite_update)
+	crossed_point_2.crossed.connect(_sprite_update)
+	crossed_point_3.crossed.connect(_sprite_update)
 
 func _physics_process(delta: float) -> void:
 	

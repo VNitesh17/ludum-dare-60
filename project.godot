@@ -23,6 +23,8 @@ buses/default_bus_layout="uid://i72kyet26vwt"
 
 BackgroundMusic="*uid://vv7wrsnwmwty"
 BackgroundMusic1="*uid://c3u2e0f4meycc"
+BackgroundMusic2="*uid://c374p7uvcce7p"
+BackgroundMusic3="*uid://bmkb6paemcncn"
 
 [global_group]
 
