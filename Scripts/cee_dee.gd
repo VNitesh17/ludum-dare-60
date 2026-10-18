@@ -5,6 +5,7 @@ extends CharacterBody2D
 @onready var crossed_point_2: Area2D = $"../CrossedPoint2"
 @onready var crossed_point_3: Area2D = $"../CrossedPoint3"
 @onready var crossed_point_4: Area2D = $"../CrossedPoint4"
+@onready var game_manager: Node = %GameManager
 
 @export var speed: float = 300.0
 
@@ -13,6 +14,8 @@ var isDead = false
 var friend_body = null
 
 var animSpeed = 0.0
+
+var total: int = 0
 
 func _ready() -> void:
 	crossed_point.crossed.connect(_sprite_update)
@@ -40,7 +43,8 @@ func _physics_process(delta: float) -> void:
 	velocity = direction * speed
 	
 	if friend_body!=null and Input.is_action_just_pressed("interact"):
-		#add score and count
+		#add count
+		game_manager.add_score(100)
 		Collect.play()
 		friend_body.queue_free()
 	
@@ -72,6 +76,10 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 func _sprite_update():
 	animSpeed+=1.0
 	animated_sprite.sprite_frames.set_animation_speed("default", animSpeed)
+	total += 100
+	game_manager.add_score(total)
 
 func _sprite_normal():
+	total += 100
+	game_manager.add_score(total)
 	animated_sprite.sprite_frames.set_animation_speed("default", 1.0)
