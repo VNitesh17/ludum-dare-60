@@ -41,6 +41,7 @@ func _physics_process(delta: float) -> void:
 	
 	if friend_body!=null and Input.is_action_just_pressed("interact"):
 		#add score and count
+		Collect.play()
 		friend_body.queue_free()
 	
 	move_and_slide()
