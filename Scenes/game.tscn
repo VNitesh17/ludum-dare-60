@@ -9802,7 +9802,7 @@ size = Vector2(101.75, 3710.5)
 size = Vector2(189.5, 3041)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tgy6u"]
-size = Vector2(4112, 8)
+size = Vector2(4002, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xe308"]
 size = Vector2(4206, 15)
@@ -10165,7 +10165,7 @@ script = ExtResource("27_81klo")
 object_scene = ExtResource("28_tgy6u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectSpawner" unique_id=1984671680]
-position = Vector2(204, -14)
+position = Vector2(232, -14)
 shape = SubResource("RectangleShape2D_tgy6u")
 
 [node name="ObjectSpawner2" type="Area2D" parent="." unique_id=1461797989]
