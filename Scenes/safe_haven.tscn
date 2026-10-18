@@ -14,16 +14,15 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g6rr7"]
-size = Vector2(46, 144.5)
+size = Vector2(43, 149)
 
-[node name="SafeHaven" type="Node2D" unique_id=787437907]
+[node name="SafeHaven" type="StaticBody2D" unique_id=1908563019 groups=["Safehaven"]]
 z_index = -1
+collision_layer = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1571926420]
 sprite_frames = SubResource("SpriteFrames_cj655")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1815623170]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1357305996]
-position = Vector2(-46, 76.25)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1477080057]
+position = Vector2(-46.5, 74.5)
 shape = SubResource("RectangleShape2D_g6rr7")

@@ -28,6 +28,7 @@ func _physics_process(delta: float) -> void:
 	velocity = direction * speed
 	
 	if friend_body!=null and Input.is_action_just_pressed("interact"):
+		#add score and count
 		friend_body.queue_free()
 	
 	move_and_slide()
@@ -39,6 +40,11 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		isDead = true
 	if body.is_in_group("Friends"):
 		friend_body = body
+	if body.is_in_group("Safehaven"):
+		hide()
+		isDead = true
+		#gameover
+		
 		
 
 
