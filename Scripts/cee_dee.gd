@@ -12,7 +12,7 @@ var isDead = false
 
 var friend_body = null
 
-var animSpeed = 1.0
+var animSpeed = 0.0
 
 func _ready() -> void:
 	crossed_point.crossed.connect(_sprite_update)
