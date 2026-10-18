@@ -28,7 +28,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_bveri"]
 radius = 117.00427
 
-[node name="Vinyl" type="CharacterBody2D" unique_id=920716668]
+[node name="Vinyl" type="CharacterBody2D" unique_id=920716668 groups=["Friends"]]
 z_index = -1
 scale = Vector2(0.5, 0.5)
 collision_layer = 2
