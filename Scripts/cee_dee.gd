@@ -6,6 +6,8 @@ extends CharacterBody2D
 
 var isDead = false
 
+var friend_body = null
+
 func _physics_process(delta: float) -> void:
 	
 	if isDead:
@@ -22,8 +24,12 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.flip_h = false
 	elif direction.x < 0:
 		animated_sprite.flip_h = true
-
+	
 	velocity = direction * speed
+	
+	if friend_body!=null and Input.is_action_just_pressed("interact"):
+		friend_body.queue_free()
+	
 	move_and_slide()
 
 
@@ -31,5 +37,10 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Vehicles"):
 		animated_sprite.play("dead")
 		isDead = true
-	if body.is_in_group("Friends") and Input.is_action_just_pressed("interact"):
-		print("Collecting")
+	if body.is_in_group("Friends"):
+		friend_body = body
+		
+
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	friend_body = null
