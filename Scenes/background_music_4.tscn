@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://rju3lxet446u"]
+
+[ext_resource type="AudioStream" uid="uid://dqwcddc6rfbdu" path="res://Assets/Music/EndMusic.wav" id="1_j8s6g"]
+[ext_resource type="Script" uid="uid://bn60de4oerv2r" path="res://Scripts/background_music.gd" id="2_hbkue"]
+
+[node name="BackgroundMusic4" type="AudioStreamPlayer" unique_id=1472835865]
+stream = ExtResource("1_j8s6g")
+bus = &"Music"
+script = ExtResource("2_hbkue")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

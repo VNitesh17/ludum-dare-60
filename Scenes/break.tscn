@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dyov6kr1dmhy4"]
+
+[ext_resource type="AudioStream" uid="uid://bx8m011dus7h5" path="res://Assets/Sound/break.wav" id="1_mitdg"]
+
+[node name="Break" type="AudioStreamPlayer" unique_id=1060364216]
+stream = ExtResource("1_mitdg")
+bus = &"Music"
