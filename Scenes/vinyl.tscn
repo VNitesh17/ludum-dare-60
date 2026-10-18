@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://1h51q56kdtk6"]
 
 [ext_resource type="Texture2D" uid="uid://c4gler7y7utlw" path="res://Assets/Sprites/vinyl.png" id="1_bveri"]
+[ext_resource type="Script" uid="uid://odymak8hnyod" path="res://Scripts/object.gd" id="1_i3edn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tm1du"]
 atlas = ExtResource("1_bveri")
@@ -31,6 +32,7 @@ radius = 117.00427
 z_index = -1
 scale = Vector2(0.5, 0.5)
 collision_layer = 2
+script = ExtResource("1_i3edn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=729106513]
 sprite_frames = SubResource("SpriteFrames_672nc")

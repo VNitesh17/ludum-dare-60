@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b1im2vci4rvng"]
 
+[ext_resource type="Script" uid="uid://odymak8hnyod" path="res://Scripts/object.gd" id="1_gq11i"]
 [ext_resource type="Texture2D" uid="uid://b0idwu7jv3y1m" path="res://Assets/Sprites/casette.png" id="1_s3b4m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gq11i"]
@@ -31,6 +32,7 @@ size = Vector2(230, 112)
 z_index = -1
 scale = Vector2(0.4, 0.4)
 collision_layer = 2
+script = ExtResource("1_gq11i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=729106513]
 sprite_frames = SubResource("SpriteFrames_672nc")
