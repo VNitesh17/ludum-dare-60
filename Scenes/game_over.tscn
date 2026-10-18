@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://kguf7hhvki6"]
+
+[ext_resource type="Script" uid="uid://bbf1g7tvwbe6" path="res://Scripts/game_over.gd" id="1_ojehl"]
+
+[node name="GameOver" type="Node2D" unique_id=1372468273]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=126754094]
+script = ExtResource("1_ojehl")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1817266559]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.679998, 16.039999)
+color = Color(0, 0, 0, 0.78431374)
+
+[node name="RetryButton" type="Button" parent="CanvasLayer" unique_id=1526774101]
+offset_left = 532.0
+offset_top = 464.0
+offset_right = 622.0
+offset_bottom = 517.0
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Retry"
+
+[node name="GameOver" type="Label" parent="CanvasLayer" unique_id=548081606]
+offset_left = 397.0
+offset_top = 149.0
+offset_right = 763.0
+offset_bottom = 237.0
+theme_override_font_sizes/font_size = 64
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="Final_Score" type="Label" parent="CanvasLayer" unique_id=2131473155]
+offset_left = 335.0
+offset_top = 295.0
+offset_right = 701.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 32
+text = "Score:"
+horizontal_alignment = 1
+
+[node name="Friends_Saved" type="Label" parent="CanvasLayer" unique_id=2114073517]
+offset_left = 278.0
+offset_top = 364.0
+offset_right = 644.0
+offset_bottom = 452.0
+theme_override_font_sizes/font_size = 32
+text = "Friends Saved: "
+horizontal_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/RetryButton" to="CanvasLayer" method="_on_retry_button_pressed"]

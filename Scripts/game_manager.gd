@@ -2,9 +2,12 @@ extends Node
 @onready var score_hud: Label = $"../CanvasLayer/Control/HBoxContainer/Score/Label"
 @onready var friends_count: Label = $"../CanvasLayer/Control2/HBoxContainer/Friends_Count/Label"
 @onready var floppy_text: Label = $"../CanvasLayer/Control3/HBoxContainer/floppy_text/Label"
+@onready var game_over: CanvasLayer = $"GameOver/CanvasLayer"
 
 var score = 0
 var count = 0
+
+var is_gameover = false
 
 func _ready():
 	update_score()
@@ -30,3 +33,13 @@ func show_save():
 	
 func hide_save():
 	floppy_text.text = ""
+	
+func get_count():
+	return count
+
+func get_score():
+	return score
+	
+func player_dead():
+	game_over.show_game_over()
+	is_gameover = true
